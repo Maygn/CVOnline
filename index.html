@@ -30,6 +30,7 @@
     <style>
       p,
       span,
+      a,
       h1 {
         transition: opacity 2s;
       }
@@ -66,7 +67,7 @@
               <div class="d-flex align-items-center">
                 <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
                   <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="CV - María Teresa González Neyra.pdf"
-                    target="_blank">Descargar PDF</a>
+                    target="_blank" alt="Download PDF">Descargar PDF</a>
                 </div>
                 <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
                   <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()" alt="Cambia a español">
@@ -526,7 +527,7 @@
 
 
       <script>
-        let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div, span");
+        let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div, span, a");
 
         function change() {
           // Al hacerle click, le quitas la clase que tiene opa 1 y le pones la clase que tiene opa 0, y como tiene transition de 1s, pues tarda un seg
