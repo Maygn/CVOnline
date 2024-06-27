@@ -27,6 +27,20 @@
         transform: translate(0) scale(1) !important;
       }
     </style>
+    <style>
+      p,
+      h1 {
+        transition: opacity 1s;
+      }
+
+      .fade-out {
+        opacity: 0;
+      }
+
+      .fade-in {
+        opacity: 1;
+      }
+    </style>
   </noscript>
 </head>
 
@@ -45,57 +59,68 @@
               <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">
                 Mayte González Neyra
               </h2>
-              <p data-aos="fade-left" data-aos-delay="100">
+              <p data-aos="fade-left" data-aos-delay="100" alt="Web developer">
                 Desarrolladora web
               </p>
               <div class="d-flex align-items-center">
-              <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="CV - María Teresa González Neyra.pdf"
-                  target="_blank">Descargar PDF</a>
+                <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
+                  <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="CV - María Teresa González Neyra.pdf"
+                    target="_blank">Descargar PDF</a>
+                </div>
+                <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
+                  <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()" alt="Cambia a español">
+                    Switch to English</a>
+                </div>
               </div>
-              <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="ingles.html">
-                  Switch to English</a>
-              </div>
-            </div>
             </div>
           </div>
         </div>
         <div class="about-section pt-4 px-3 px-lg-4 mt-1">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="h3 mb-3">Sobre mi</h2>
-              <p>
-                Hola! Mi nombre es María Teresa González, y soy una bióloga 
-                que además acabo de terminar el grado superior de desarrollo 
-                de aplicaciones web. Además de los estudios, tengo 
-                experiencia con trato cara al público en inglés y español 
+              <h2 class="h3 mb-3" alt="About me">Sobre mi</h2>
+              <p
+                alt="Hello! My name is María Teresa González, and I am a biologist who has recently completed an advanced degree in web application development. In addition to my studies, I have experience in customer service in both English and Spanish, as well as in business administration.
+              In the field of programming, I have a solid foundation in Java and have partially worked with Spring Boot. I have also trained in JavaScript, PHP, CSS, and Bootstrap.
+              I consider myself a dynamic, persistent person with a great capacity for learning. I pursued this advanced degree to dedicate myself to programming, and to this day, I have thoroughly enjoyed everything I have learned.">
+                Hola! Mi nombre es María Teresa González, y soy una bióloga
+                que además acabo de terminar el grado superior de desarrollo
+                de aplicaciones web. Además de los estudios, tengo
+                experiencia con trato cara al público en inglés y español
                 y de administración de una empresa.
                 <br>
-                En el campo de la programación, tengo una base sólida de 
-                Java, y he trabajado parcialmente con Spring Boot. 
+                En el campo de la programación, tengo una base sólida de
+                Java, y he trabajado parcialmente con Spring Boot.
                 También me he formado en JavaScript, PHP, CSS y Bootstrap.
                 <br>
-                Me considero una persona dinámica, constante y con mucha 
+                Me considero una persona dinámica, constante y con mucha
                 capacidad de aprendizaje. He realizado este grado superior
-                 para dedicarme a la programación, y hasta el día de hoy siempre he 
-                 disfrutado muchísimo de todo lo que he aprendido.  
+                para dedicarme a la programación, y hasta el día de hoy siempre he
+                disfrutado muchísimo de todo lo que he aprendido.
               </p>
             </div>
             <div class="col-md-5 offset-md-1">
-              <h2 class="h3 mb-3">Datos de contacto</h2>
+              <h2 class="h3 mb-3" alt="Contact information">Datos de contacto</h2>
               <div class="row mt-2">
                 <div class="col-sm-4">
-                  <div class="pb-1">Email</div>
+                  <div class="pb-1">
+                    <p alt="E-mail">E-mail</p>
+                  </div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">mayneyra87@gmail.com</div>
+                  <div class="pb-1 text-secondary">
+                    <p alt="mayneyra87@gmail.com">mayneyra87@gmail.com</p>
+                  </div>
                 </div>
                 <div class="col-sm-4">
-                  <div class="pb-1">Teléfono</div>
+                  <div class="pb-1">
+                    <p alt="Phone number">Teléfono</p>
+                  </div>
                 </div>
                 <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">+34 676 747 289</div>
+                  <div class="pb-1 text-secondary">
+                    <p alt="+34 676 747 289">676 747 289</p>
+                  </div>
                 </div>
 
 
@@ -107,25 +132,31 @@
 
         <hr class="d-print-none" />
         <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4">Experiencia laboral</h2>
+          <h2 class="h3 mb-4" alt="Work experience">Experiencia laboral</h2>
           <div class="timeline">
 
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Técnico en farmacia
-                  <span class="text-muted h6">Farmacia La Rotonda, Sevilla</span>
+                  <p alt="Pharmacy assistant">Técnico en farmacia</p>
+
+                  <span class="text-muted h6" alt="Farmacia La Rotonda, Seville">Farmacia La Rotonda, Sevilla</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  03/2022-06/2022
+                  <p alt="03/2022-06/2022">03/2022-06/2022</p>
+
                 </div>
                 <div>
-                  Realización de prácticas FCT del grado medio de técnico en 
-                  farmacia y parafarmacia. Las tareas realizadas fueron 
-                  control, pedido, recepción y colocación de mercancías, 
-                  trámites con proveedores, atención al púbico y colocación 
-                  de escaparates.
+                  <p alt="Completed FCT internships for the intermediate degree in pharmacy and para-pharmacy. 
+                    Tasks included inventory control, ordering, receiving, and stocking merchandise, handling 
+                    transactions with suppliers, customer service, and arranging window displays.">
+                    Realización de prácticas FCT del grado medio de técnico en
+                    farmacia y parafarmacia. Las tareas realizadas fueron
+                    control, pedido, recepción y colocación de mercancías,
+                    trámites con proveedores, atención al púbico y colocación
+                    de escaparates.</p>
+
                 </div>
               </div>
             </div>
@@ -136,20 +167,26 @@
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Investigadora en agronomía
-                  <span class="text-muted h6">Agrocelis</span>
+                  <p alt="Agronomy Researcher">Investigadora en agronomía</p>
+
+                  <span class="text-muted h6" alt="Agrocelis">Agrocelis</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  02/2019-06/2019
+                  <p alt="02/2019-06/2019">02/2019-06/2019</p>
+
                 </div>
                 <div>
-                  Colaboración Universidad-Empresa para la realización del 
-                  trabajo de fin de grado. Las principales tareas llevadas 
-                  a cabo fueron la realización de diseño experimental, 
-                  control de cultivos, selección de muestras, obtención de 
-                  datos, procesamiento estadístico de los mismos y extracción de 
-                  conclusiones.
+                  <p alt="University-Company collaboration for the completion of the final degree project. 
+                    Main tasks included experimental design, crop management, sample selection, data collection, 
+                    statistical data processing, and conclusion extraction.">
+                    Colaboración Universidad-Empresa para la realización del
+                    trabajo de fin de grado. Las principales tareas llevadas
+                    a cabo fueron la realización de diseño experimental,
+                    control de cultivos, selección de muestras, obtención de
+                    datos, procesamiento estadístico de los mismos y extracción de
+                    conclusiones.</p>
+
                 </div>
               </div>
             </div>
@@ -159,16 +196,22 @@
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Profesora en centro de artes marciales
-                  <span class="text-muted h6">Asociación deportiva Kamui Budokan, Málaga</span>
+                  <p alt="Instructor at Martial Arts Center">Profesora en centro de artes marciales</p>
+
+                  <span class="text-muted h6" alt="Kamui Budokan Sports Association, Malaga">Asociación deportiva Kamui
+                    Budokan, Málaga</span>
                 </div>
                 <div class="text-muted text-small mb-2">
-                  09/2013-12/2015
+                  <p alt="09/2013-12/2015">09/2013-12/2015</p>
+
                 </div>
                 <div>
-                  Trabajé con un equipo de seis profesores de educación física y 
-                  artes marciales, con grupos de niños y adultos de entre ocho y 
-                  doce estudiantes.
+                  <p alt="I worked with a team of six instructors in physical fitness and martial arts, 
+                    teaching groups of children and adults ranging from eight to twelve students.">
+                    Trabajé con un equipo de seis profesores de educación física y
+                    artes marciales, con grupos de niños y adultos de entre ocho y
+                    doce estudiantes.</p>
+
                 </div>
               </div>
             </div>
@@ -178,16 +221,23 @@
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Tutora de apoyo al aprendizaje
-                  <span class="text-muted h6">Autónomo, Sevilla y Málaga</span>
+                  <p alt="Learning Support Tutor">Tutora de apoyo al aprendizaje</p>
+
+                  <span class="text-muted h6" alt="Self-employed, Seville and Malaga">Autónomo, Sevilla y Málaga</span>
                 </div>
                 <div class="text-muted text-small mb-2">
-                  2010-Actualidad
+                  <p alt="2010-Present">2010-Actualidad</p>
+
                 </div>
                 <div>
-                  Diecinueve años tutelando niños desde primaria hasta bachillerato,
-                   con una media de ocho estudiantes por año, incluyendo alumnos con necesidades
-                   especiales o problemas de aprendizaje.
+                  <p
+                    alt="Extensive experience tutoring children from primary school to high school, 
+                    with an average of eight students per year, including students with special needs or learning difficulties.">
+                    Larga experiencia tutelando niños desde primaria hasta bachillerato,
+                    con una media de ocho estudiantes por año, incluyendo alumnos con necesidades
+                    especiales o problemas de aprendizaje.
+                  </p>
+
                 </div>
               </div>
             </div>
@@ -198,26 +248,30 @@
         <div class="page-break"></div>
 
         <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Idiomas</h2>
-          
-
-            <div class="timeline-card timeline-card-success card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">
-                  Inglés
+          <h2 class="h3 mb-4" alt="Languages">Idiomas</h2>
 
 
-                </div>
+          <div class="timeline-card timeline-card-success card shadow-sm">
+            <div class="card-body">
+              <div class="h5 mb-1">
+                <p alt="English">Inglés</p>
 
-                <div>
-                  Tengo un nivel CEFR C1 en lengua inglesa, acreditado por 
-                  British Council Spain en 2019. Posteriormente he realizado 
-                  cursos de inmersión lingüistica y proyectos de Erasmus+, 
+              </div>
+
+              <div>
+                <p
+                  alt="I have a CEFR C1 level in English, accredited by the British Council Spain in 2019. 
+                  Subsequently, I have taken language immersion courses and Erasmus+ projects, carried out entirely in English">
+                  Tengo un nivel CEFR C1 en lengua inglesa, acreditado por
+                  British Council Spain en 2019. Posteriormente he realizado
+                  cursos de inmersión lingüistica y proyectos de Erasmus+, llevados a cabo
                   completamente en inglés.
-                </div>
+                </p>
+
               </div>
             </div>
-          
+          </div>
+
         </div>
 
 
@@ -225,70 +279,70 @@
         <div class="page-break"></div>
 
         <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4">Educación</h2>
+          <h2 class="h3 mb-4" alt="Education">Educación</h2>
           <div class="timeline">
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Grado superior de Desarrollo de Aplicaciones Web
-                  <span class="text-muted h6">IES Punta del Verde, Sevilla</span>
+                  <p alt="Web Application Development">Grado superior de Desarrollo de Aplicaciones Web</p>
+
+                  <span class="text-muted h6" alt="Technical college Punta del Verde, Seville">IES Punta del Verde,
+                    Sevilla</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
+                  <p alt="2022-Present">2022-Actualidad</p>
                   2022-Actualidad
                 </div>
                 <div>
-                  Acabo de terminar el segundo curso del grado superior de desarrollo de
-                  aplicaciones web, que se centra en el desarollo y manejo de aplicaciones,
-                  bases de datos y sitios web, y de su integración tanto en negocios como en
-                  planes de márketing. Incluye formación importante en
-                  lenguajes de programación:Java, PHP, CSS, HTML y SQL, así como los frameworks Laravel y Bootstrap. 
-                  También he practicado con el framework SpringBoot.
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">
-                  Certificado CEFR C1.
-                  <span class="text-muted h6">Sevilla</span>
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2019
-                </div>
-                <div>
-                  Certificado CEFR con nivel C1, acreditado por British Council Spain
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">
-                  Grado Universitario en Biología.
-                  <span class="text-muted h6">Universidad de Sevilla</span>
-                </div>
-                <div class="text-muted text-small mb-2">
-                  2015-2019
-                </div>
-                <div>
-                  Además de las troncales, especializado mediante asignaturas 
-                  optativas  y el trabajo de fin de grado en fisiología vegetal y agronomía.
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">
-                  Integración de conceptos y tecnologías modernas a la problemática del cáncer
-                  <span class="text-muted h6">Universidad Internacional de Andalucía, Huelva</span>
+                  <p alt="I have just completed the second year of the Higher Degree in Web Application Development, 
+                    focusing on the development and management of applications, databases, and websites, and their 
+                    integration into business and marketing plans. The program includes extensive training in programming 
+                    languages: Java, PHP, CSS, HTML, and SQL, as well as frameworks like Laravel and Bootstrap. 
+                    I have also gained experience with the SpringBoot framework.">
+                    Acabo de terminar el segundo curso del grado superior de desarrollo de
+                    aplicaciones web, que se centra en el desarollo y manejo de aplicaciones,
+                    bases de datos y sitios web, y de su integración tanto en negocios como en
+                    planes de márketing. Incluye formación importante en
+                    lenguajes de programación:Java, PHP, CSS, HTML y SQL, así como los frameworks Laravel y Bootstrap.
+                    También he practicado con el framework SpringBoot.</p>
 
                 </div>
+              </div>
+            </div>
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1">
+                  <p alt="CEFR C1 Certificate">Certificado CEFR C1.</p>
+
+                  <span class="text-muted h6" alt="Seville">Sevilla</span>
+                </div>
                 <div class="text-muted text-small mb-2">
-                  2011
+                  <p alt="2019">2019</p>
+
                 </div>
                 <div>
-                  Curso de verano con temática relacionada con tratamientos experimentales para distintos tipos de tumores.
+                  <p alt="CEFR C1 Certificate, accredited by British Council Spain">
+                    Certificado CEFR con nivel C1, acreditado por British Council Spain</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1">
+                  <p alt="University Degree in Biology">Grado Universitario en Biología</p>
+
+                  <span class="text-muted h6" alt="University of Seville">Universidad de Sevilla</span>
+                </div>
+                <div class="text-muted text-small mb-2">
+                  <p alt="2015-2019">2015-2019</p>
+
+                </div>
+                <div>
+                  <p alt="In addition to the core subjects, I specialized through elective 
+                  courses and the final degree project in plant's physiology and agronomy.">
+                    Además de las troncales, especializado mediante asignaturas
+                    optativas y el trabajo de fin de grado en fisiología vegetal y agronomía.</p>
                 </div>
               </div>
             </div>
@@ -296,15 +350,40 @@
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Dirección de equipos
-                  <span class="text-muted h6">Universidad de Málaga</span>
+                  <p alt="Integration of Concepts and Modern Technologies in Cancer Issues">
+                    Integración de conceptos y tecnologías modernas a la problemática del cáncer</p>
+                  <span class="text-muted h6" alt="International University of Andalusia, Huelva">
+                    Universidad Internacional de Andalucía, Huelva</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  2010
+                  <p alt="2011">2011</p>
+
                 </div>
                 <div>
-                  Curso de verano centrado en comunicación asertiva y organización y reparto de tareas.
+                  <p alt="Summer course focusing on experimental treatments for various types of tumors.">
+                    Curso de verano con temática relacionada con tratamientos experimentales para distintos tipos de
+                    tumores.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-card timeline-card-primary card shadow-sm">
+              <div class="card-body">
+                <div class="h5 mb-1">
+                  <p alt="Team Leadership">Dirección de equipos</p>
+
+                  <span class="text-muted h6" alt="University of Malaga">Universidad de Málaga</span>
+
+                </div>
+                <div class="text-muted text-small mb-2">
+                  <p alt="2010">2010</p>
+
+                </div>
+                <div>
+                  <p alt="Summer course focused on assertive communication, organization, and task delegation.">
+                    Curso de verano centrado en comunicación asertiva y organización y reparto de tareas.</p>
+
                 </div>
 
               </div>
@@ -313,16 +392,22 @@
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  ADHD: Everyday Strategies for Elementary Students
-                  <span class="text-muted h6">University at Buffalo & The State University of New York</span>
+                  <p alt="ADHD: Everyday Strategies for Elementary Students">ADHD: Everyday Strategies for Elementary
+                    Students</p>
+
+                  <span class="text-muted h6" alt="University at Buffalo & The State University of New York">University
+                    at Buffalo & The State University of New York</span>
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  2010
+                  <p alt="2010">2010</p>
                 </div>
                 <div>
-                  Curso de especialización en estrategias de enseñanza y técnicas de aprendizaje para alumnos 
-                  con déficit de atención y/o hiperactividad.
+                  <p
+                    alt="Specialization Course in Teaching Strategies and Learning Techniques for Students with Attention Deficit and/or Hyperactivity">
+                    Curso de especialización en estrategias de enseñanza y técnicas de aprendizaje para alumnos
+                    con déficit de atención y/o hiperactividad.</p>
+
                 </div>
 
               </div>
@@ -330,24 +415,26 @@
           </div>
         </div>
 
-        
+
         <hr class="d-print-none" />
         <div class="page-break"></div>
         <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Permiso de conducción</h2>
+          <h2 class="h3 mb-4" alt="Driving License">Permiso de conducción</h2>
           <div class="timeline">
 
 
             <div class="timeline-card timeline-card-success card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Tipo B.
 
+                  <p alt="B Class.">Tipo B</p>
 
                 </div>
 
                 <div>
-                  Vehículo propio.
+
+                  <p alt="Own vehicle">Vehículo propio</p>
+
                 </div>
               </div>
             </div>
@@ -355,79 +442,131 @@
         </div>
 
         <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Voluntariado</h2>
+          <h2 class="h3 mb-4" alt="Volunteering">Voluntariado</h2>
           <div class="timeline">
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
                 <div class="h5 mb-1">
-                  Cáritas San Juan
-                  <span class="text-muted h6">Málaga</span>
+                  <p alt="Cáritas San Juan">Cáritas San Juan</p>
+
+                  <span class="text-muted h6" alt="Malaga">Málaga</span>
                 </div>
                 <div class="text-muted text-small mb-2">
-                  2004-2010
+                  <p alt="2004-2010">2004-2010</p>
+
                 </div>
                 <div>
-                  Repartos de alimentos y clases de apoyo a extranjeros. A cargo de Pilar Berlanga Jolín
+                  <p alt="Food distribution and support classes for foreigners. Supervised by Pilar Berlanga">Repartos
+                    de alimentos y clases de apoyo a extranjeros. A cargo de Pilar Berlanga</p>
+
                 </div>
               </div>
             </div>
 
-        <hr class="d-print-none" />
-        <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
-          <h2 class="h3 text mb-3">Contacto</h2>
-          <div class="row">
-            <div class="col-md-7 d-print-none">
-              <div class="my-2">
-                <form action="https://formspree.io/f/mrgwrweg" method="POST">
-                  <div class="row">
-                    <div class="col-6">
-                      <input class="form-control" type="text" id="name" name="name" placeholder="Tu nombre" required />
-                    </div>
-                    <div class="col-6">
-                      <input class="form-control" type="email" id="email" name="_replyto" placeholder="Tu E-mail"
-                        required />
-                    </div>
+            <hr class="d-print-none" />
+            <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
+              <h2 class="h3 text mb-3" alt="Contact">Contacto</h2>
+              <div class="row">
+                <div class="col-md-7 d-print-none">
+                  <div class="my-2">
+                    <form action="https://formspree.io/f/mrgwrweg" method="POST">
+                      <div class="row">
+                        <div class="col-6">
+                          <input class="form-control" type="text" id="name" name="name" placeholder="Tu nombre"
+                            required />
+                        </div>
+                        <div class="col-6">
+                          <input class="form-control" type="email" id="email" name="_replyto" placeholder="Tu E-mail"
+                            required />
+                        </div>
+                      </div>
+                      <div class="form-group my-2">
+                        <textarea class="form-control" style="resize: none" id="message" name="message" rows="4"
+                          placeholder="Tu mensaje" required></textarea>
+                      </div>
+                      <button class="btn btn-primary mt-2" type="submit">
+                        <p alt="Send">Enviar</p>
+                      </button>
+                    </form>
                   </div>
-                  <div class="form-group my-2">
-                    <textarea class="form-control" style="resize: none" id="message" name="message" rows="4"
-                      placeholder="Tu mensaje" required></textarea>
+                </div>
+                <div class="col">
+                  <div class="mt-2">
+                    <h3 class="h6" alt="Phone number">Teléfono</h3>
+                    <div class="pb-2 text-secondary">
+                      <p alt="+34 676 747 289">676 747 289</p></div>
+                    <h3 class="h6" alt="E-mail">E-mail</h3>
+                    <div class="pb-2 text-secondary">
+                      <p alt="mayneyra87@gmail.com">mayneyra87@gmail.com</p></div>
                   </div>
-                  <button class="btn btn-primary mt-2" type="submit">
-                    Enviar
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div class="col">
-              <div class="mt-2">
-                <h3 class="h6">Teléfono</h3>
-                <div class="pb-2 text-secondary">+34 676 747 289</div>
-                <h3 class="h6">Email</h3>
-                <div class="pb-2 text-secondary">mayneyra87@gmail.com</div>
-              </div>
-            </div>
+                </div>
 
+              </div>
+            </div>
           </div>
+
+
+
         </div>
       </div>
+      <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+        <div class="container">
+          <div class="my-3">
+            <div class="h4">Mayte G. Neyra</div>
+
+          </div>
+
+
+        </div>
+      </footer>
+      <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+      <script src="scripts/aos.js?ver=1.2.0"></script>
+      <script src="scripts/main.js?ver=1.2.0"></script>
+
+
+      <script>
+        let elementos = document.querySelectorAll("p, h1, h2, h3, h4, h5, div, span");
+
+        function change() {
+          // Al hacerle click, le quitas la clase que tiene opa 1 y le pones la clase que tiene opa 0, y como tiene transition de 1s, pues tarda un seg
+
+          for (let elemento of elementos) {
+            if (elemento.getAttribute("alt") != null) {
+              let time = (Math.random() * (1000));
+              setTimeout(function () { eleChange(elemento) }, time)
+            }
+          }
+        }
+
+
+        function eleChange(elemento) {
+          elemento.classList.remove("fade-in");
+          elemento.classList.add("fade-out");
+
+          //Un segundo mas tarde
+          setTimeout(() => {
+            //Cambias el texto
+            let temp = elemento.innerHTML;
+            elemento.innerHTML = elemento.getAttribute("alt");
+            elemento.setAttribute("alt", temp);
+
+            //Y vuelves a intercambiar las clases de opacidad
+            elemento.classList.remove("fade-out");
+            elemento.classList.add("fade-in");
+          }, 1000);
+        }
 
 
 
-    </div>
-  </div>
-  <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-    <div class="container">
-      <div class="my-3">
-        <div class="h4">Mayte G. Neyra</div>
-
-      </div>
-
-
-    </div>
-  </footer>
-  <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-  <script src="scripts/aos.js?ver=1.2.0"></script>
-  <script src="scripts/main.js?ver=1.2.0"></script>
+        /*function togglePlaceholder() {
+    var textarea = document.getElementById('myTextarea');
+    var currentPlaceholder = textarea.getAttribute('placeholder');
+    var altPlaceholder = textarea.getAttribute('data-placeholder-alt');
+    
+    textarea.setAttribute('placeholder', altPlaceholder);
+    textarea.setAttribute('data-placeholder-alt', currentPlaceholder);
+}*/
+      </script>
 </body>
 
 </html>
