@@ -65,14 +65,12 @@
                 Desarrolladora web
               </p>
               <div class="d-flex align-items-center">
-                <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                  <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="CV - María Teresa González Neyra.pdf"
-                    target="_blank" alt="Download PDF">Descargar PDF</a>
-                </div>
-                <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-                  <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()" alt="Cambia a español">
-                    Switch to English</a>
-                </div>
+            <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
+                <a hrefAlt="CV-M GonzalezNeyra- english.pdf" alt="Download PDF" id="downloadLink" 
+                class="btn btn-light text-dark shadow-sm mt-1 me-1" href="CV - María Teresa González Neyra.pdf"
+                  target="_blank">Descargar PDF</a>
+                  <a alt="Change Language" class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="change()">Cambiar Idioma</a>
+              </div>
               </div>
             </div>
           </div>
@@ -126,12 +124,12 @@
                 </div>
                 <div class="col-sm-4">
                   <div class="pb-1">
-                    <p alt="E-mail">E-mail</p>
+                    <p alt="Website">Página web</p>
                   </div>
                 </div>
                 <div class="col-sm-8">
                   <div class="pb-1 text-secondary">
-                    <p alt="mayneyra87@gmail.com">mayneyra87@gmail.com</p>
+                    <p alt="mneyra.es">mneyra.es</p>
                   </div>
                 </div>
 
@@ -156,7 +154,7 @@
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  <p alt="03/2022-06/2022">09/2024-01/2025</p>
+                  <p alt="09/2024-01/2025">09/2024-01/2025</p>
 
                 </div>
                 <div>
@@ -209,7 +207,7 @@
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  <p alt="02/2019-06/2019">02/2019-06/2019</p>
+                  <p alt="09/2018-06/2019">09/2018-06/2019</p>
 
                 </div>
                 <div>
@@ -262,7 +260,7 @@
                   <span class="text-muted h6" alt="Seville and Malaga">Sevilla y Málaga</span>
                 </div>
                 <div class="text-muted text-small mb-2">
-                  <p alt="2010-Present">2010-Actualidad</p>
+                  <p alt="09/2015-06/2025">09/2015-06/2025</p>
 
                 </div>
                 <div>
@@ -437,7 +435,7 @@ aplicando los conocimientos adquiridos en un entorno real.</p>
 
                 </div>
                 <div class="text-muted text-small mb-2">
-                  <p alt="2010">2010</p>
+                  <p alt="01/02/2022 - 08/03/2022">01/02/2022 - 08/03/2022</p>
                 </div>
                 <div>
                   <p
@@ -598,6 +596,12 @@ aplicando los conocimientos adquiridos en un entorno real.</p>
             let temp = elemento.innerHTML;
             elemento.innerHTML = elemento.getAttribute("alt");
             elemento.setAttribute("alt", temp);
+
+             if(elemento.getAttribute("hrefAlt")!=null){
+            let htemp=elemento.href;
+            elemento.href=elemento.getAttribute("hrefAlt");
+            elemento.setAttribute("hrefAlt", htemp);
+          }
 
             //Y vuelves a intercambiar las clases de opacidad
             elemento.classList.remove("fade-out");
